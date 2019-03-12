@@ -1,0 +1,6 @@
+#!/bin/bash
+cow="/path/to/cows.txt"
+bull="/path/to/excuses.txt"
+selectcow=$(gshuf -n 1 $cow)
+selectbull=$(gshuf -n 1 $bull)
+cowsay -f $selectcow $selectbull | lolcat
